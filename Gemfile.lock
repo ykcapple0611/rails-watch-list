@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 6098379d79ff45226188598023d3bc0b7149ef9d
+  branch: main
+  specs:
+    faker (3.0.0)
+      i18n (>= 1.8.11, < 2)
+
+GIT
   remote: https://github.com/heartcombo/simple_form.git
   revision: 31fe25504771bd6cd425b585a4e0ed652fba4521
   specs:
@@ -82,6 +90,7 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    date (3.2.2)
     debug (1.6.3)
       irb (>= 1.3.6)
       reline (>= 0.3.1)
@@ -124,6 +133,10 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
+    open-uri (0.2.0)
+      stringio
+      time
+      uri
     pg (1.4.4)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -198,8 +211,11 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.1.1)
       railties (>= 6.0.0)
+    stringio (3.0.2)
     thor (1.2.1)
     tilt (2.0.11)
+    time (0.2.0)
+      date
     timeout (0.3.0)
     turbo-rails (1.3.2)
       actionpack (>= 6.0.0)
@@ -207,6 +223,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    uri (0.11.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -224,9 +241,11 @@ DEPENDENCIES
   autoprefixer-rails
   bootsnap
   debug
+  faker!
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
+  open-uri
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
